@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Apartments() {
   const [apartments, setApartments] = useState([]);
@@ -196,7 +196,7 @@ export default function Apartments() {
 
                   {/* Кнопка подробнее */}
                   <button
-                    onClick={() => navigate(`/show/${item.id}`)}
+                    onClick={() => navigate(`/show/single/${item.id}`)}
                     className="group/button relative w-full px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl text-white text-center overflow-hidden"
                   >
                     <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover/button:w-full group-hover/button:h-full opacity-10" />
