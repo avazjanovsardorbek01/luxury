@@ -154,7 +154,7 @@ const Contact = () => {
                         value={formData.fullName}
                         onChange={handleChange}
                         className="w-full py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none"
-                        placeholder="Иван Петров"
+                        placeholder="Full Name"
                         required
                       />
                     </div>

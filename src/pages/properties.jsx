@@ -60,7 +60,7 @@ export default function Apartments() {
   }, []);
 
   return (
-    <section className="relative py-32 bg-gray-900">
+    <section className="relative py-32 bg-gray-900" id="properties">
       {/* Декоративные элементы */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
