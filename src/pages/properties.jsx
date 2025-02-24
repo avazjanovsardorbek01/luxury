@@ -83,6 +83,40 @@ export default function Apartments() {
           </h2>
         </div>
 
+        {/* Фильтры */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <button
+            onClick={() => setFilters({ ...filters, category: "" })}
+            className={`px-6 py-2 rounded-full ${
+              filters.category === ""
+                ? "bg-indigo-600 text-white"
+                : "bg-white/10 text-white hover:bg-white/20"
+            } transition-all duration-300 transform hover:scale-105 active:scale-95`}
+          >
+            Все объекты
+          </button>
+          <button
+            onClick={() => setFilters({ ...filters, category: "Квартира" })}
+            className={`px-6 py-2 rounded-full ${
+              filters.category === "Квартира"
+                ? "bg-indigo-600 text-white"
+                : "bg-white/10 text-white hover:bg-white/20"
+            } transition-all duration-300 transform hover:scale-105 active:scale-95`}
+          >
+            Квартиры
+          </button>
+          <button
+            onClick={() => setFilters({ ...filters, category: "Дом" })}
+            className={`px-6 py-2 rounded-full ${
+              filters.category === "Дом"
+                ? "bg-indigo-600 text-white"
+                : "bg-white/10 text-white hover:bg-white/20"
+            } transition-all duration-300 transform hover:scale-105 active:scale-95`}
+          >
+            Дома
+          </button>
+        </div>
+
         {/* Состояние загрузки и ошибки */}
         {loading && (
           <p className="text-yellow-500 text-center text-xl">Загрузка...</p>
