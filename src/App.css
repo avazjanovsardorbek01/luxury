@@ -1,95 +1,84 @@
-/* Hero-Section */
+/* Мобильные устройства (до 546px) */
 @media (max-width: 546px) {
-  #home {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
+  .hero-section {
+    padding: 20px 10px;
   }
 
   .hero-title {
-    font-size: 28px;
-    line-height: 1.2;
+    font-size: 2rem; /* Уменьшаем размер заголовка */
   }
 
-  .hero-subtitle {
-    font-size: 16px;
-    margin-top: 10px;
+  .hero-description {
+    font-size: 1rem; /* Уменьшаем размер текста */
   }
 
   .hero-buttons {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Кнопки вертикально */
+    gap: 10px; /* Отступ между кнопками */
+  }
+
+  .hero-button-primary,
+  .hero-button-secondary {
+    width: 100%; /* Кнопки на всю ширину */
+    padding: 10px 0; /* Уменьшаем отступы */
   }
 
   .hero-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Одна колонка */
+    gap: 10px; /* Уменьшаем отступы */
   }
 
-  .hero-image img {
-    object-fit: cover;
-    height: auto;
+  .hero-stat-item {
+    padding: 10px; /* Уменьшаем отступы */
+  }
+
+  .hero-stat-number {
+    font-size: 1.5rem; /* Уменьшаем размер чисел */
+  }
+
+  .hero-stat-label {
+    font-size: 0.875rem; /* Уменьшаем размер текста */
   }
 }
 
-@media (max-width: 320px) {
+/* Планшеты (от 547px до 1024px) */
+@media (min-width: 547px) and (max-width: 1024px) {
   .hero-title {
-    font-size: 24px;
+    font-size: 3rem; /* Средний размер заголовка */
   }
 
-  .hero-subtitle {
-    font-size: 14px;
+  .hero-description {
+    font-size: 1.25rem; /* Средний размер текста */
   }
 
-  .hero-buttons a {
-    font-size: 14px;
-    padding: 10px 15px;
+  .hero-buttons {
+    flex-direction: row; /* Кнопки горизонтально */
+    gap: 20px; /* Отступ между кнопками */
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 20px; /* Средний отступ */
   }
 }
 
-@media (max-width: 546px) {
-  #about {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
-  }
-  #properties {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
-  }
-  #services {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
-  }
-  #agents {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
-  }
-  #contact {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
+/* Десктопы (от 1025px) */
+@media (min-width: 1025px) {
+  .hero-title {
+    font-size: 4rem; /* Большой размер заголовка */
   }
 
-  #footer {
-    padding: 20px;
-    text-align: center;
-    margin-right: -345px;
-    display: flex;
-    justify-content: center;
+  .hero-description {
+    font-size: 1.5rem; /* Большой размер текста */
+  }
+
+  .hero-buttons {
+    flex-direction: row; /* Кнопки горизонтально */
+    gap: 30px; /* Большой отступ между кнопками */
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr); /* Три колонки */
+    gap: 30px; /* Большой отступ */
   }
 }

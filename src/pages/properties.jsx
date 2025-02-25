@@ -89,17 +89,17 @@ export default function Apartments() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Заголовок секции */}
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 mb-4">
-            <span className="h-px w-8 bg-indigo-500" />
+        <div className="text-center mb-20 flex flex-col items-center">
+          <div className="flex flex-col items-center space-y-2 mb-4">
+            <span className="h-px w-16 bg-indigo-500" />
             <span className="text-indigo-400 uppercase text-sm tracking-wider font-medium">
               Наши объекты
             </span>
-            <span className="h-px w-8 bg-indigo-500" />
+            <span className="h-px w-16 bg-indigo-500" />
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 className="text-4xl md:text-3xl font-bold mb-6 text-white flex flex-col">
             Эксклюзивная
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 ml-2">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mt-2">
               недвижимость
             </span>
           </h2>

@@ -13,17 +13,20 @@ const Services = () => {
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20" data-aos="fade-up">
-          <div class="inline-flex items-center space-x-2 mb-4">
-            <span class="h-px w-8 bg-indigo-500"></span>
+        <div
+          class="text-center mb-20 flex flex-col items-center"
+          data-aos="fade-up"
+        >
+          <div class="flex flex-col items-center space-y-2 mb-4">
+            <span class="h-px w-16 bg-indigo-500"></span>
             <span class="text-indigo-400 uppercase text-sm tracking-wider font-medium">
               Наши услуги
             </span>
-            <span class="h-px w-8 bg-indigo-500"></span>
+            <span class="h-px w-16 bg-indigo-500"></span>
           </div>
-          <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+          <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white flex flex-col">
             Премиальный сервис для
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mt-2">
               требовательных клиентов
             </span>
           </h2>
