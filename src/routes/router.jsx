@@ -1,5 +1,5 @@
 const routes = [
-  { path: "/", label: "Home", id: "#home" },
+  { path: "/", label: "Home" },
   { path: "/", label: "About", id: "#about" },
   { path: "/", label: "Services", id: "#services" },
   { path: "/", label: "Properties", id: "#properties" },

@@ -73,7 +73,7 @@ const Hero = () => {
               </a>
             </div>
           </div>
-
+          {/* 
           <div
             class="backdrop-blur-md bg-white/10 rounded-3xl p-8 shadow-2xl"
             data-aos="fade-left"
@@ -173,7 +173,7 @@ const Hero = () => {
                 </span>
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         <div

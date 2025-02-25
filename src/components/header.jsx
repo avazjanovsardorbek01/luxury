@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import routes from "../routes/router";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate(); // Создаем навигацию
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,9 +44,10 @@ const Header = () => {
               {routes.map(({ id, label }) => (
                 <a
                   key={id}
-                  href={id}
+                  href={id ? id : "/"}
                   onClick={(e) => {
                     e.preventDefault();
+                    id ? null : navigate("/");
                     const section = document.querySelector(id);
                     if (section) {
                       window.scrollTo({
