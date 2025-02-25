@@ -8,7 +8,7 @@ import Services from "./pages/services";
 import Agents from "./pages/agents";
 import Contact from "./pages/contact";
 import SingleApartmentPage from "./components/show/single"; // Страница одной квартиры
-
+import "./App.css";
 export default function App() {
   return (
     <Router>

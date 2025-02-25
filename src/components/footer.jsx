@@ -2,7 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer class="relative bg-gray-900 pt-24 pb-12 overflow-hidden">
+    <footer
+      class="relative bg-gray-900 pt-24 pb-12 overflow-hidden"
+      id="footer"
+    >
       <div class="absolute inset-0">
         <div class="absolute inset-0 bg-[url('/path/to/pattern.svg')] opacity-5"></div>
         <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
@@ -207,13 +210,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      <button
-        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center text-white shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 group"
-      >
-        <i class="fas fa-arrow-up transform group-hover:-translate-y-1 transition-transform"></i>
-      </button>
     </footer>
   );
 };
