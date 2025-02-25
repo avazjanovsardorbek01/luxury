@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaMapMarkerAlt,
@@ -14,6 +14,7 @@ import {
 
 const SingleApartmentPage = () => {
   const { id } = useParams();
+  const navigate = useNavigate(); // Создаем навигацию
   const [apartment, setApartment] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -100,6 +101,17 @@ const SingleApartmentPage = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Кнопка возврата на главную */}
+        <div className="mb-8">
+          <button
+            onClick={() => navigate("/")}
+            className="flex items-center space-x-2 text-white bg-indigo-600 px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
+          >
+            <FaHome className="text-xl" />
+            <span>Главная</span>
+          </button>
+        </div>
+
         {/* Заголовок */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center space-x-2 mb-4">

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import routes from "../routes/router";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,20 +39,23 @@ const Header = () => {
               </a>
             </div>
             <div className="hidden lg:flex items-center space-x-8">
-              {[
-                "home",
-                "about",
-                "services",
-                "properties",
-                "agents",
-                "contact",
-              ].map((item) => (
+              {routes.map(({ id, label }) => (
                 <a
-                  key={item}
-                  href={`#${item}`}
+                  key={id}
+                  href={id}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const section = document.querySelector(id);
+                    if (section) {
+                      window.scrollTo({
+                        top: section.offsetTop - 80, // 80px – запас для фиксированного хедера
+                        behavior: "smooth",
+                      });
+                    }
+                  }}
                   className="text-gray-300 hover:text-white transition-colors relative group py-2"
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {label}
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
                 </a>
               ))}
@@ -82,21 +86,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="lg:hidden bg-gray-900/95 backdrop-blur-xl border-t border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
-              {[
-                "home",
-                "about",
-                "services",
-                "properties",
-                "agents",
-                "contact",
-              ].map((item) => (
+              {routes.map(({ path, label }) => (
                 <a
-                  key={item}
-                  href={`#${item}`}
+                  key={path}
+                  href={path}
                   className="block text-gray-300 hover:text-white transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  {label}
                 </a>
               ))}
               <div className="pt-4 border-t border-white/10">
