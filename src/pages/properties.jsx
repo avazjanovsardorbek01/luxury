@@ -328,7 +328,17 @@ export default function Apartments() {
                 {/* Цена */}
                 <div className="absolute bottom-4 left-4">
                   <div className="text-2xl font-bold text-white">
-                    {item.system_prod_price || item.system_rent_price} $
+                    {item.system_prod_price
+                      ? `${
+                          item.system_prod_price ||
+                          item.system_prod_kom_price ||
+                          "Цена не указана"
+                        } $`
+                      : ` ${
+                          item.system_rent_price ||
+                          item.system_rent_kom_price ||
+                          "Цена не указана"
+                        } $`}{" "}
                   </div>
                   <div className="text-sm text-gray-300">
                     {item.obshhaya_ploshhad} м²
