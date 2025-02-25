@@ -1,10 +1,10 @@
 const routes = [
-  { path: "/", label: "Home" },
-  { path: "/", label: "About", id: "#about" },
-  { path: "/", label: "Services", id: "#services" },
-  { path: "/", label: "Properties", id: "#properties" },
-  { path: "/", label: "Agents", id: "#agents" },
-  { path: "/", label: "Contact", id: "#contact" },
+  { path: "/", label: "Главная" },
+  { path: "/", label: "О нас", id: "#about" },
+  { path: "/", label: "Услуги", id: "#services" },
+  { path: "/", label: "Недвижимость", id: "#properties" },
+  { path: "/", label: "Агенты", id: "#agents" },
+  { path: "/", label: "Контакты", id: "#contact" },
 ];
 
 export default routes;

@@ -80,7 +80,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-32 bg-gradient-to-b from-gray-900 via-indigo-900/20 to-gray-900"
+      className="relative py-32 bg-gradient-to-b from-black via-gray-800 to-black"
     >
       {/* Декоративные элементы */}
       <div className="absolute inset-0">

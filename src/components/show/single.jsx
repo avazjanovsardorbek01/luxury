@@ -228,9 +228,11 @@ const SingleApartmentPage = () => {
 
             {/* Описание */}
             <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-              <h2 className="text-2xl font-bold text-white mb-4">Описание</h2>
+              <h2 className="text-2xl font-bold text-white mb-4">
+                {apartment.zagolovok}
+              </h2>
               <p className="text-gray-300 leading-relaxed">
-                {apartment.zagolovok || "Описание отсутствует"}
+                {apartment.opisanie || "Описание отсутствует"}
               </p>
             </div>
 
