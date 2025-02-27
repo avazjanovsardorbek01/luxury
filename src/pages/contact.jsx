@@ -60,8 +60,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      content: "info@example.com",
-      link: "mailto:info@example.com",
+      content: "itkeyuzb@gmail.com",
+      link: "mailto:itkeyuzb@gmail.com",
     },
     {
       icon: <FaWhatsapp />,
@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: <FaTelegram />,
       title: "Telegram",
-      content: "@example",
-      link: "https://t.me/example",
+      content: "@ImoratEstate",
+      link: "https://t.me/imoratestete",
     },
   ];
 

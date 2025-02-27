@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,7 +19,7 @@ const Footer = () => {
               <div class="w-10 h-10 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
                 <span class="text-white text-xl font-bold">L</span>
               </div>
-              <span class="text-white text-xl font-bold">Luxury Estate</span>
+              <span class="text-white text-xl font-bold">Real Estate</span>
             </div>
 
             <p class="text-gray-400 text-sm">
@@ -133,13 +134,13 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@example.com"
+                  href="mailto:itkeyuzb@gmail.com"
                   class="text-gray-400 hover:text-indigo-400 transition-colors flex items-center group"
                 >
                   <div class="w-8 h-8 bg-white/5 rounded-lg flex items-center justify-center mr-3 group-hover:bg-indigo-600/20 transition-colors">
                     <i class="fas fa-envelope text-indigo-400"></i>
                   </div>
-                  info@example.com
+                  itkeyuzb@gmail.com
                 </a>
               </li>
               <li>
@@ -173,7 +174,10 @@ const Footer = () => {
               >
                 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-full opacity-10"></span>
                 <span class="relative flex items-center">
-                  <span>Подписаться</span>
+                  <NavLink to="https://t.me/imoratestete" class="text-white">
+                    Подписаться
+                  </NavLink>
+
                   <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </span>
               </button>
@@ -184,7 +188,7 @@ const Footer = () => {
         <div class="pt-8 border-t border-white/10">
           <div class="grid md:grid-cols-2 gap-4 items-center">
             <div class="text-gray-400 text-sm">
-              © 2024 Luxury Estate. Все права защищены.
+              © 2024 Real Estate. Все права защищены.
             </div>
 
             <div class="flex space-x-4 md:justify-end text-sm">

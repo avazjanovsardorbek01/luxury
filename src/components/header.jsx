@@ -45,9 +45,7 @@ const Header = () => {
               <div className="w-10 h-10 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-xl flex items-center justify-center">
                 <span className="text-white text-xl font-bold">L</span>
               </div>
-              <span className="text-white text-xl font-bold">
-                Luxury Estate
-              </span>
+              <span className="text-white text-xl font-bold">Real Estate</span>
             </a>
 
             {/* НАВИГАЦИЯ ДЛЯ ДЕСКТОПА */}
