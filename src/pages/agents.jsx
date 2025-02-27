@@ -1,5 +1,7 @@
 import React from "react";
-
+import Manager from "../assets/manager.png";
+import Marketolog from "../assets/marketolog.jpg";
+import Egor from "../assets/egor.png";
 const Agents = () => {
   return (
     <section id="agents" class="relative py-32 bg-gray-900">
@@ -34,7 +36,7 @@ const Agents = () => {
             <div class="relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-500 hover:bg-white/10">
               <div class="relative h-96 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                  src={Manager}
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   alt="Agent Name"
                 />
@@ -104,7 +106,7 @@ const Agents = () => {
             <div class="relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-500 hover:bg-white/10">
               <div class="relative h-96 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                  src={Marketolog}
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   alt="Agent Name"
                 />
@@ -174,7 +176,7 @@ const Agents = () => {
             <div class="relative bg-white/5 backdrop-blur-xl rounded-3xl overflow-hidden transition-all duration-500 hover:bg-white/10">
               <div class="relative h-96 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a"
+                  src={Egor}
                   class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   alt="Agent Name"
                 />
