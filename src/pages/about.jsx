@@ -28,7 +28,7 @@ const About = () => {
             </span>
           </h2>
           <p class="text-gray-300 text-lg max-w-2xl mx-auto">
-            15 лет безупречной работы в сфере элитной недвижимости. Мы не просто
+            2 лет безупречной работы в сфере элитной недвижимости. Мы не просто
             продаем дома – мы помогаем воплотить ваши мечты в реальность.
           </p>
         </div>
@@ -133,7 +133,7 @@ const About = () => {
               <div class="text-center">
                 <div class="text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">
                   <span class="counter" data-target="15">
-                    0
+                    2
                   </span>
                   +
                 </div>

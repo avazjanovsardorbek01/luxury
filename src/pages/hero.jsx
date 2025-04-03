@@ -1,5 +1,5 @@
 import React from "react";
-
+import Toshkent from "../assets/Toshkent.webp";
 const Hero = () => {
   return (
     <section
@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero-overlay absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70 z-20"></div>
         <div className="hero-image relative h-full w-full">
           <img
-            src="https://uzbekistan.travel/storage/app/media/Rasmlar/Toshkent/shaxar/cropped-images/AdobeStock_596864804-0-0-0-0-1738671594.jpeg"
+            src={Toshkent}
             className="h-full w-full object-cover object-center scale-110 animate-slow-zoom"
             alt="Luxury Estate Background"
           />
@@ -99,7 +99,7 @@ const Hero = () => {
           </div>
           <div className="hero-stat-item p-4 sm:p-6 backdrop-blur-md bg-white/10 rounded-2xl transform hover:scale-105 transition-transform duration-300">
             <div className="hero-stat-number text-3xl sm:text-4xl font-bold mb-2">
-              15
+              2+
             </div>
             <div className="hero-stat-label text-gray-300">Лет на рынке</div>
           </div>

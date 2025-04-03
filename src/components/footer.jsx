@@ -169,15 +169,13 @@ const Footer = () => {
                 />
               </div>
               <button
+                href="#"
                 type="submit"
                 class="group relative w-full inline-flex items-center justify-center px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/25"
               >
                 <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-white rounded-full group-hover:w-full group-hover:h-full opacity-10"></span>
                 <span class="relative flex items-center">
-                  <NavLink to="https://t.me/imoratestete" class="text-white">
-                    Подписаться
-                  </NavLink>
-
+                  Подписаться
                   <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
                 </span>
               </button>

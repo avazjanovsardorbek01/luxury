@@ -69,9 +69,9 @@ const Agents = () => {
 
               <div class="p-6 text-center">
                 <h3 class="text-xl font-bold text-white mb-2">
-                  Александр Петров
+                  Мехри Гулямова
                 </h3>
-                <p class="text-indigo-400 mb-4">Старший брокер</p>
+                <p class="text-indigo-400 mb-4">Manager</p>
 
                 <div class="grid grid-cols-3 gap-4 mb-6">
                   <div>
@@ -79,7 +79,7 @@ const Agents = () => {
                     <div class="text-sm text-gray-400">Сделок</div>
                   </div>
                   <div>
-                    <div class="text-2xl font-bold text-white">10</div>
+                    <div class="text-2xl font-bold text-white">2</div>
                     <div class="text-sm text-gray-400">Лет опыта</div>
                   </div>
                   <div>
@@ -138,9 +138,7 @@ const Agents = () => {
               </div>
 
               <div class="p-6 text-center">
-                <h3 class="text-xl font-bold text-white mb-2">
-                  Александр Петров
-                </h3>
+                <h3 class="text-xl font-bold text-white mb-2">Рауф</h3>
                 <p class="text-indigo-400 mb-4">Старший брокер</p>
 
                 <div class="grid grid-cols-3 gap-4 mb-6">
