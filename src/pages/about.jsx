@@ -1,5 +1,8 @@
 import React from "react";
-
+import FirstApartment from "../assets/apartments-first.jpg";
+import SecondApartment from "../assets/apartments-second.jpg";
+import ThirdApartment from "../assets/aparment-third.webp";
+import FourthApartment from "../assets/ApartmentFourth.jpeg";
 const About = () => {
   return (
     <section
@@ -38,34 +41,18 @@ const About = () => {
             <div class="grid grid-cols-2 gap-4">
               <div class="space-y-4">
                 <div class="rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9"
-                    class="w-full h-64 object-cover"
-                    alt="Luxury Home 1"
-                  />
+                  <img src={ThirdApartment} alt="" />
                 </div>
                 <div class="rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-                    class="w-full h-48 object-cover"
-                    alt="Luxury Home 2"
-                  />
+                  <img src={FirstApartment} alt="FirsApartment" />
                 </div>
               </div>
               <div class="space-y-4 pt-8">
                 <div class="rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
-                    class="w-full h-48 object-cover"
-                    alt="Luxury Home 3"
-                  />
+                  <img src={SecondApartment} alt="FirsApartment" />
                 </div>
                 <div class="rounded-2xl overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
-                  <img
-                    src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea"
-                    class="w-full h-64 object-cover"
-                    alt="Luxury Home 4"
-                  />
+                  <img src={FourthApartment} alt="" />
                 </div>
               </div>
             </div>
@@ -142,7 +129,7 @@ const About = () => {
               <div class="text-center">
                 <div class="text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">
                   <span class="counter" data-target="1000">
-                    0
+                    500
                   </span>
                   +
                 </div>
@@ -150,10 +137,8 @@ const About = () => {
               </div>
               <div class="text-center">
                 <div class="text-3xl font-bold text-white mb-2 group-hover:scale-110 transition-transform">
-                  <span class="counter" data-target="98">
-                    0
-                  </span>
-                  %
+                  <span class="counter" data-target="98"></span>
+                  92%
                 </div>
                 <p class="text-gray-400 text-sm">Довольных клиентов</p>
               </div>
